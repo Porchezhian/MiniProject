@@ -1,1 +1,3 @@
-Backend files - WebApi
+-Create a MVC web application
+-Replace the given folders with the old ones
+-Code First approach has been used for database creation
