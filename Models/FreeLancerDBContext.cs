@@ -12,7 +12,7 @@ namespace FreeLancer.Models
             : base("name=FreeLancerDBContext")
         {
         }
-
+        public DbSet<Selected> Selecteds { get; set; }
         public DbSet<Freelancer> FreeLancers { get; set; }
         public DbSet<Hirer> Hirers { get; set; }
     }
