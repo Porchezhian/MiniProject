@@ -16,6 +16,12 @@ namespace FreeLancer.Controllers.Api
         {
             context = new FreeLancerDBContext();
         }
+        //GET api/freelancer
+        [HttpGet]
+        public IEnumerable<Freelancer> GetFreelancers()
+        {
+            return context.FreeLancers.ToList();
+        }
         //POST api/freelancer
         [HttpPost]
         public Freelancer CreateFreeLancer(Freelancer freelancer)
